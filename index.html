@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA-Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins';
+        }
+
+        .title {
+            font-weight: 600;
+        }
+
+        h5 {
+            font-weight: 600;
+            font-size: 18px;
+            color:rgb(48, 45, 45);
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(247, 246, 246);">
+    <main>
+        <section class="container bg-info text-white p-4">
+            <h2 class="text-center title">DIU SGPA CALCULATOR</h2>
+            <p class="text-center mb-1">Developer Name: Amrita Dey</p>
+            <p class="text-center mb-1">ID: 202-15-3792</p>
+            <p class="text-center mb-1">Section: PC-A</p>
+            <p class="text-center mb-1">Department of CSE</p>
+        </section>
+        <section id="add-new-field-section" class="container mt-5">
+            <div class="row align-items-center mb-3 gx-2">
+                <div class="col-3">
+                    <h5 class="px-2 py-2 rounded-2 bg-info text-dark">Courses</h5>
+                </div>
+                <div class="col-3">
+                    <h5 class="px-2 py-2 rounded-2 bg-info text-dark">Grade</h5>
+                </div>
+                <div class="col-3">
+                    <h5 class="px-2 py-2 rounded-2 bg-info text-dark">Credit</h5>
+                </div>
+                <div class="col-3">
+                    <h5 class="px-2 py-2 rounded-2 bg-info text-dark">Romove</h5>
+                </div>
+            </div>
+            <div class="row align-items-center mb-3 gx-2">
+                <div class="col-3">
+                    <input type="text" class="form-control course-field border border-2 border-primary" disabled
+                        placeholder="course 1">
+                </div>
+                <div class="col-3">
+                    <select class="marks-field form-select form-select-lg border border-2 border-primary"
+                        aria-label=".form-select-lg example" style="font-size: 16px; padding: 6px 12px;">
+                        <option selected>Grade</option>
+                        <option value="4.00">A+ (4.00)</option>
+                        <option value="3.75">A (3.75)</option>
+                        <option value="3.50">A- (3.50)</option>
+                        <option value="3.25">B+ (3.25)</option>
+                        <option value="3.00">B (3.00)</option>
+                        <option value="2.75">B- (2.75)</option>
+                        <option value="2.50">C+ (2.50)</option>
+                        <option value="2.25">C (2.25)</option>
+                        <option value="2.00">D (2.00)</option>
+                        <option value="0.00">F (0.00)</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control input-credit-field border border-2 border-primary">
+                </div>
+                <div class="col-3">
+                    <button type="button" class="d-block btn btn-danger w-100 text-white delete-btn">Delete</button>
+                </div>
+            </div>
+            <div class="row align-items-center mb-3 gx-2">
+                <div class="col-3">
+                    <input type="text" class="form-control course-field border border-2 border-primary" disabled
+                        placeholder="course 1">
+                </div>
+                <div class="col-3">
+                    <select class="marks-field form-select form-select-lg border border-2 border-primary"
+                        aria-label=".form-select-lg example" style="font-size: 16px; padding: 6px 12px;">
+                        <option selected>Grade</option>
+                        <option value="4.00">A+ (4.00)</option>
+                        <option value="3.75">A (3.75)</option>
+                        <option value="3.50">A- (3.50)</option>
+                        <option value="3.25">B+ (3.25)</option>
+                        <option value="3.00">B (3.00)</option>
+                        <option value="2.75">B- (2.75)</option>
+                        <option value="2.50">C+ (2.50)</option>
+                        <option value="2.25">C (2.25)</option>
+                        <option value="2.00">D (2.00)</option>
+                        <option value="0.00">F (0.00)</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control input-credit-field border border-2 border-primary">
+                </div>
+                <div class="col-3">
+                    <button type="button" class="d-block btn btn-danger w-100 text-white delete-btn">Delete</button>
+                </div>
+            </div>
+            <div class="row align-items-center mb-3 gx-2">
+                <div class="col-3">
+                    <input type="text" class="form-control course-field border border-2 border-primary" disabled
+                        placeholder="course 1">
+                </div>
+                <div class="col-3">
+                    <select class="marks-field form-select form-select-lg border border-2 border-primary"
+                        aria-label=".form-select-lg example" style="font-size: 16px; padding: 6px 12px;">
+                        <option selected>Grade</option>
+                        <option value="4.00">A+ (4.00)</option>
+                        <option value="3.75">A (3.75)</option>
+                        <option value="3.50">A- (3.50)</option>
+                        <option value="3.25">B+ (3.25)</option>
+                        <option value="3.00">B (3.00)</option>
+                        <option value="2.75">B- (2.75)</option>
+                        <option value="2.50">C+ (2.50)</option>
+                        <option value="2.25">C (2.25)</option>
+                        <option value="2.00">D (2.00)</option>
+                        <option value="0.00">F (0.00)</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control input-credit-field border border-2 border-primary">
+                </div>
+                <div class="col-3">
+                    <button type="button" class="d-block btn btn-danger w-100 text-white delete-btn">Delete</button>
+                </div>
+            </div>
+        </section>
+        <section class="container mb-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="text-center">Total Credit Requirement:0</h5>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-center">Total Credits Taken : <span id="set-credit">0<span></span></h5>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-center">SGPA : <span id="set-sgpa">0.00</span></h5>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row gx-2">
+                <div class="col-6">
+                    <button id="add-new-subject-btn" type="button" class="d-block btn btn-info w-100 text-white">Add New
+                        Subject</button>
+                </div>
+                <div class="col-6">
+                    <button id="calculate-sgpa-btn" type="button"
+                        class="d-block btn btn-warning w-100 text-white">Calculate SGPA</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container text-center mt-5">
+        <h5 class="positon-fixed start-0">Copyright © 2022 DIU SGPA Calculator</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
