@@ -64,7 +64,7 @@ document.getElementById('calculate-sgpa-btn').addEventListener('click', function
     for(let i = 0; i < totalFields; i++) {
         const marks = parseFloat(marksFields[i].value);
         const credit = parseInt(creditFields[i].value);
-        if(isNaN(marks) || isNaN(credit) || credit==0) {
+        if(isNaN(marks) || isNaN(credit) || credit<=0) {
             window.alert('Please Fillup The All Required Field!!');
             return;
         }
